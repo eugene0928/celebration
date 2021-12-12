@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabriknoma</title>
+
+    <style>
+
+        body{
+            background-image: url(/birthday_balloon.jpg);
+            width: 760px;
+        }
+
+   
+        #video {
+        position: absolute;
+        width: 750px;
+        height: 550px;
+        left: 270px; 
+        top: 10px;
+        } 
+    
+       
+        #button2{
+            position: relative;
+            left: 470px;
+            top: 550px;
+            background-color: rgb(0, 0, 0);
+            border: .5px solid crimson;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow: 0 0 30px 0 rgb(220, 20, 20),
+                        0 0 30px 0 crimson,
+                        0 0 10px 0 crimson inset;
+            font-size: 50px;
+            font-family: Patrick Hand;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+        <video id= "video" src="/IMG_8054.MOV" type="video/mp4" autoplay>
+        </video>
+    
+
+        <div >
+            <button id="button2"><i>Tabriklayman</i></button>
+        </div>
+    
+    <script>
+
+        let body = document.querySelector("body");
+        let btn = document.querySelector("#button2");
+        
+        btn.addEventListener("click", () => {
+            mywindow = window.open("page3.html", "mywindow", "location=1,status=1,scrollbars=1,  width=550,height=500");
+            mywindow.moveTo(400, 100);
+            mywindow.focus();
+            
+            body.style.backgroundImage = "url('happy_birthday.jpg')"
+
+        })
+        
+    </script>
+</body>
+</html>
